@@ -1,0 +1,272 @@
+
+ * {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: black;
+
+ }
+
+ .hero {
+
+    background: linear-gradient(135deg, #004382 0%, #004382 25%, #FF5F12 75%, #FF5F12 100%);
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    min-height: auto;
+    height: auto;
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ .hero h1 {
+
+    width: 100%;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+
+ }
+
+ .hero .subtitle {
+
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    opacity: 0.95;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+ }
+
+.cta-button {
+    background: #e94560;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(233, 69, 96, 0.4);
+}
+
+.cta-button:hover {
+    background: #d43550;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(233, 69, 96, 0.6);
+}
+
+ section {
+
+    padding: 80px 20px;
+    max-width: 1200px;
+
+ }
+
+ .section-title {
+
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+
+ }
+
+ .gradient-text {
+
+    background:
+    linear-gradient(
+
+       230deg,
+       #004382 0%,
+       #004382 25%,
+       #FF5F12 75%,
+       #FF5F12 100%
+
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+ }
+
+ .block {
+
+    background: #1F1B1B;
+    border-radius: 30px;
+    margin: 90px auto;
+    color: white;
+
+ }
+
+ .intro-text {
+
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+
+ }
+
+ .objectives-grid {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+
+ }
+
+ .objective-card {
+
+    background: linear-gradient(9deg, #FF5F12 0%, #FF5F12 25%, #004382 75%, #004382 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+ }
+
+ .objective-card:hover {
+
+    transform: translateY(-10px);
+    box-shadow: 0 2.5px 20px white;
+
+ }
+
+ .objective-card h3 {
+
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    color: white;
+
+ }
+
+ .objective-card p {
+
+    line-height: 1.7;
+    font-size: 0.95em;
+
+ }
+
+ .features-list {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+
+ }
+
+ .feature-item {
+
+    background: linear-gradient(351deg, #FF5F12 0%, #FF5F12 25%, #004382 75%, #004382 100%);
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 4px solid white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+
+ }
+
+ .feature-item h4 {
+
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+
+ }
+
+ .feature-item p {
+
+    color: white;
+    line-height: 1.6;
+
+ }
+
+ .justification .section-title { color: white; }
+
+ .justification .section-title span { color: #ff6b7a; }
+
+ .justification-content {
+
+    font-size: 1.1em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+
+ }
+
+ .scope-box {
+
+    background: linear-gradient(120deg, #004382 0%, #004382 25%, #FF5F12 75%, #FF5F12 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+
+ }
+
+ .scope-box h3 {
+
+    font-size: 1.5em;
+    margin-bottom: 15px;
+
+ }
+
+ .scope-box p {
+
+    font-size: 1.1em;
+    line-height: 1.7;
+
+ }
+
+ footer {
+
+    background: white;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+
+ }
+
+ .footer-info {
+
+    font-size: 0.95em;
+    opacity: 0.8;
+
+ }
+
+ @media (max-width: 768px) {
+
+    .hero h1 { font-size: 2.2em; }
+    .hero .subtitle { font-size: 1.1em; }
+    .section-title { font-size: 1.8em; }
+    section { padding: 50px 20px; }
+
+ }
+
